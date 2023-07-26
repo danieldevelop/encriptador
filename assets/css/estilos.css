@@ -17,6 +17,9 @@ es decir, estilos que se repetiran en mas de un elemento de la página. */
 
 body {
     background: #F3F5FC;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 .contenedor {
