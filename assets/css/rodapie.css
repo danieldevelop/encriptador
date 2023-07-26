@@ -1,0 +1,42 @@
+/* ESTILOS PARA EL FOOTER (PIE DE PAGINA)
+-------------
+Se aplicaran al menu de nevegación de la pagina, aqui tambien se incluira el estilos para 
+el responsive design si así se require del menu. */
+
+.rodapie {
+    background: #0A3871;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.rodapie__contenido {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.rodapie__items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1rem;
+}
+
+.rodapie__item {
+    list-style: none;
+}
+
+.rodapie__link {
+    text-decoration: none;
+    color: #fff;
+}
