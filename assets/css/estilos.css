@@ -1,3 +1,7 @@
+@import url('navegacion.css');
+@import url('rodapie.css');
+
+
 /* ESTILOS GENERALES
 -------------
 Se aplicaran a todos los elementos de la página que no tengan un estilo propio, 
@@ -20,67 +24,6 @@ body {
    /*  max-width: 1200px; */ /* Este parametro se puede modificar de acuerdo a las necesidades del proyecto. */
     margin: 0 auto;
 }
-
-
-
-/* ESTILOS PARA EL MENU
--------------
-Se aplicaran al menu de nevegación de la pagina, aqui tambien se incluira el estilos para 
-el responsive design si así se require del menu. */
-
-.dg-navbar {
-    background: #F3F5FC;
-    padding: .5rem .5rem;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.navegacion {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.navegacion__brand > img {
-    width: 25px;
-}
-
-.navegacion__items {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 1rem;
-}
-
-.navegacion__item {
-    list-style: none;
-}
-
-.navegacion__link {
-    text-decoration: none;
-    color: #0A3871;
-    font-weight: 500;
-    font-size: 1.5rem;
-}
-
 
 
 
