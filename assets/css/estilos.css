@@ -12,8 +12,16 @@ Variables que serab reutilizadas en todo el proyecto */
     --color-white: #fff;
 
     --fs-14: 14px;
-    --fs-11: 11px;
+    --fs-13: 13px;
+    --fs-20: 20px;
 }
+
+
+
+
+
+
+
 
 
 /* ESTILOS GENERALES
@@ -46,6 +54,112 @@ textarea {
     resize: none;
 }
 
-main {
-    padding: 1.5rem 1.5rem;
+
+
+
+
+
+
+
+
+/* ESTILOS PARA EL CONTENIDO MAIN
+-------------
+Estilos que se aplicaran dentro del main de la pagina. */
+
+.contenido-caja {
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    margin: 1.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+}
+
+.formulario__input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    font-size: var(--fs-14);
+    height: 350px;
+    margin-bottom: 1rem;
+    background: #F3F5FC;
+}
+
+.formulario__input:focus {
+    outline: none;
+}
+
+.formulario__info {
+    font-size: var(--fs-13);
+}
+
+.formulario__botones {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.informacion {
+    background: var(--color-white);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    justify-self: flex-end;
+}
+
+.img-munheco {
+    width: 192px;
+    height: 192px;
+}
+
+.informacion__info {
+    margin-top: .5rem;
+    text-align: center;
+    font-size: var(--fs-20);
+}
+
+.informacion__leyenda {
+    margin: .5rem;
+    text-align: center;
+    font-size: var(--fs-13);
+}
+
+.informacion__texto {
+    width: 100%;
+    border: none;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    font-size: var(--fs-14);
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.informacion__texto:focus {
+    outline: none;
 }
