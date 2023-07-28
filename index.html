@@ -42,6 +42,29 @@
 
     <main>
         <div class="contenedor">
+            <section class="contenido-caja">
+
+                <form class="formulario">
+                    <textarea class="formulario__input" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                    <p class="formulario__info"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minusculas y sin acentos.</p>
+                    
+                    <div class="formulario__botones">    
+                        <button type="button" id="btn-encriptar" class="boton_encriptar">Encriptar</button>
+                        <button type="button" id="btn-desencriptar" class="boton_desencriptar">Desencriptar</button>
+                    </div>
+                </form>
+                
+                <aside class="informacion">
+                    <img src="./assets/img/muñeco.svg" alt="munheco" class="img-munheco">
+                    
+                    <h2 class="informacion__info">Ningún mensaje fue encontrado</h2>
+                    <p class="informacion__leyenda">Ingresa el texto que desees encriptar o desencriptar</p>
+                    
+                    <textarea id="texto-procesado" class="informacion__texto" cols="30" rows="8" readonly></textarea>
+                    <button type="button" id="btn-copiar-texto" class="boton_copiar_texto">Copiar texto</button>
+                </aside>
+
+            </section>
         </div>
     </main>
 
