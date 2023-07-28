@@ -26,4 +26,5 @@
     width: 150px;
     color: var(--color-blue-dark);
     font-size: var(--fs-14);
+    display: none;
 }
