@@ -1,5 +1,19 @@
 @import url('navegacion.css');
+@import url('botones.css');
 @import url('rodapie.css');
+
+
+/* VARIABLES CSS
+-------------
+Variables que serab reutilizadas en todo el proyecto */
+:root {
+    --color-blue-dark: #0A3871;
+    --color-blue-light: #D8DFE8;
+    --color-white: #fff;
+
+    --fs-14: 14px;
+    --fs-11: 11px;
+}
 
 
 /* ESTILOS GENERALES
@@ -28,6 +42,10 @@ body {
     margin: 0 auto;
 }
 
+textarea {
+    resize: none;
+}
 
-
-/* Path: assets\css\estilos.css **/
+main {
+    padding: 1.5rem 1.5rem;
+}
