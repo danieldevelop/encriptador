@@ -50,6 +50,12 @@ body {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 480px) {
+    .contenedor {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .contenedor {
         width: 100%;
@@ -112,6 +118,7 @@ Estilos que se aplicaran dentro del main de la pagina. */
     height: 350px;
     margin-bottom: 1rem;
     background: #F3F5FC;
+    font-size: 1rem;
 }
 
 .formulario__input:focus {

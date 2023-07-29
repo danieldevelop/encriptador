@@ -20,6 +20,20 @@ el responsive design si así se require del menu. */
             justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) {
+    .rodapie__contenido {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .rodapie__contenido {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
 .rodapie__items {
     display: -webkit-box;
     display: -webkit-flex;
