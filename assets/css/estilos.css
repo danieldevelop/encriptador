@@ -161,9 +161,7 @@ Estilos que se aplicaran dentro del main de la pagina. */
             align-items: center;
     -webkit-border-radius: 5px;
             border-radius: 5px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 400px;
     justify-self: flex-end;
 }
 
