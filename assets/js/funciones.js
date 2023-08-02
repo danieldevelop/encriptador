@@ -1,3 +1,5 @@
+import { miniAlerta } from './utils.js';
+
 export const encripta = (texto) => {
     let textoCifrado = '';
 
