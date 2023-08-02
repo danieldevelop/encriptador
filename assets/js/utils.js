@@ -16,3 +16,7 @@ export const miniAlerta = (mensaje, icono, boton, position) => {
         title: mensaje,
     });
 }
+
+export const esconderElemento = (elemento) => {
+    document.querySelector(elemento).style.display = 'none';
+};
