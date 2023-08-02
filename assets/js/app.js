@@ -2,7 +2,7 @@ import { miniAlerta, esTexto, esconderElemento } from "./utils.js";
 import { encripta, desencripta, copiarTexto } from "./funciones.js";
 
 const btnEncriptar = document.getElementById('btn-encriptar');
-const brnDesencriptar = document.getElementById('btn-desencriptar');
+const btnDesencriptar = document.getElementById('btn-desencriptar');
 const textoProcesado = document.getElementById('texto-procesado');
 const btnCopiarTexto = document.getElementById('btn-copiar-texto');
 
@@ -13,7 +13,7 @@ btnEncriptar.addEventListener('click', () => {
         miniAlerta('Debes ingresar un texto', 'warning', false, 'top');
         return;
     } else if (!esTexto(inpTexto)) {
-        miniAlerta('Debes ingresar solo letras minusculas', 'error', false, 'top');
+        miniAlerta('Debes ingresar solo letras minusculas y sin acentos', 'error', false, 'top');
         return;
     }
 
@@ -30,3 +30,28 @@ btnEncriptar.addEventListener('click', () => {
 
 });
 
+
+btnDesencriptar.addEventListener('click', () => {
+    const inpTexto = document.getElementById('texto').value.trim();
+
+    if (inpTexto === '') {
+        miniAlerta('Debes ingresar un texto', 'warning', false, 'top');
+        return;
+    } else if (!esTexto(inpTexto)) {
+        miniAlerta('Debes ingresar solo letras minuscula y sin acentos', 'error', false, 'top');
+        return;
+    }
+
+    esconderElemento('.img-munheco');
+    esconderElemento('.informacion__info');
+    esconderElemento('.informacion__leyenda');
+    textoProcesado.style.display = 'block';
+    textoProcesado.style.height = '100%';
+    textoProcesado.value = desencripta(inpTexto);
+    btnCopiarTexto.style.display = 'block';
+});
+
+
+btnCopiarTexto.addEventListener('click', () => {
+    copiarTexto(textoProcesado);
+});
